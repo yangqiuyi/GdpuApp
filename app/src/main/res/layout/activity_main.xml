@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".activity.ScholarshipMainActivity">
+
+
+        <TextView
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#cc3366"
+            android:textAlignment="center"
+            android:text="学术活动"
+            android:textColor="#ffffff"
+            android:textSize="100px"
+            android:paddingBottom="8dp"
+            />
+
+    <ListView
+        android:id="@+id/scholar_lisview"
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="#cccccc"
+        android:background="#ffff"
+        android:dividerHeight="2px"
+        android:headerDividersEnabled="false"></ListView>
+
+</RelativeLayout>

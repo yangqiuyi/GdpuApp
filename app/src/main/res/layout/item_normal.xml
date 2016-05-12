@@ -1,0 +1,26 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ScholarshipMainActivity" >
+
+    <ImageView
+        android:id="@+id/Imageview_1"
+        android:layout_width="40dip"
+        android:layout_height="40dip"
+        android:background="@drawable/scholarship_item_yuandian"
+       android:layout_marginTop="14dp"
+        android:layout_marginLeft="8dp"/>
+
+
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="70dip"
+        android:layout_toRightOf="@+id/Imageview_1"
+        android:paddingLeft="25dp"
+        android:paddingTop="10dp"
+        />
+
+</RelativeLayout>
