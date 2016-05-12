@@ -7,10 +7,8 @@ import com.example.dell.gdpuapp.modle.ItemModel;
 import com.example.dell.gdpuapp.modle.ItemNewsModel;
 import com.example.dell.gdpuapp.modle.NewsPlate;
 import com.example.dell.gdpuapp.modle.NormalPlate;
-import com.example.dell.gdpuapp.util.NetUtil;
 
 
-import org.jsoup.Connection;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
@@ -18,23 +16,17 @@ import org.jsoup.select.Elements;
 
 import java.util.ArrayList;
 
-/**
- * Created by dell on 2016/5/7.
- */
+
 public class NewsGetter {
 
     private static String TAG = "NewsGetter";
 
     public NewsPlate getNews(String url) {  //返回一个news对象
 
-        Log.i(TAG, "URL = " + url);
-
         ArrayList<ItemNewsModel> itemNewsModels = new ArrayList<>();
         NormalPlate news = new NormalPlate();
 
         try {
-
-        //    String htmlString = NetUtil.getUrl(url);
 
             Document doc = Jsoup.connect(url).timeout(Environment.TIME_OUT).get();//把html文件下载下来，转换为Document
             if (doc == null){

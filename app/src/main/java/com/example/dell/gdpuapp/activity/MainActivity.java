@@ -12,7 +12,7 @@ import com.example.dell.gdpuapp.R;
 /**
  * Created by dell on 2016/5/7.
  */
-public class FirstActivity extends Activity {
+public class MainActivity extends Activity {
 
 
 
